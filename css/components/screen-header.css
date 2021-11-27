@@ -1,0 +1,41 @@
+.screen__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+  /* transform: translateX(-8px); */
+}
+
+.screen-header__icon span {
+  margin-left: 25px;
+}
+
+.screen-header-Find__icon__notification {
+  position: absolute;
+  background-color: #ff6229;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translate(-1px, -160%);
+}
+
+@keyframes spinicon {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+  /* 100% {
+    transform: rotateZ(0deg);
+  } */
+}
+.screen-header__icon .fa-cog:hover {
+  animation: spinicon 2s linear infinite;
+}
